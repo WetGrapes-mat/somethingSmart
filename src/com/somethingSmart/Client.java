@@ -6,6 +6,11 @@ import java.util.ArrayList;
 public class Client extends User {
     private Cart cartClient;
 
+    public void doOrder(){
+        Order o = new Order(this);
+        this.cartClient.clearCart();
+    }
+
     public Client(String password, String login, String userName) {
         super(password, login, userName);
         this.cartClient = new Cart();

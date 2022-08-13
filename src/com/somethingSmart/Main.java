@@ -7,15 +7,6 @@ public class Main {
         Category ca = new Category("pip");
         Product p = new Product(1.4567f, ca, "ffff");
         c.getCartClient().addProduct(p);
-
-        Order o = new Order(c);
-
-
-
+        c.doOrder();
     }
-
-
-    //    u.setUserName("fjfjfj")
-
-
 }
